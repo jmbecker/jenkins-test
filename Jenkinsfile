@@ -14,6 +14,11 @@ pipeline {
         echo 'Bees Buzzing Again'
       }
     }
+    stage('exec script'){
+      steps {
+        sh './scripts/helloworld.sh'
+      }
+    }
 
   }
 }
